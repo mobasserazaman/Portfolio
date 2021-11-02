@@ -1,0 +1,10 @@
+.myimage {
+  width: 80%;
+}
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+  .myimage {
+    width: 60%;
+    /* margin: auto; */
+  }
+}
