@@ -1,11 +1,14 @@
 import React from "react";
 import { useState } from "react";
+// import "bootstrap/dist/css/bootstrap.css";
+import { PhoneIcon } from "@heroicons/react/solid";
 
 export const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [msg, setMsg] = useState("");
 
+  //NETLIFY documentation
   //what's happening
   function encode(data) {
     return Object.keys(data)
@@ -31,11 +34,19 @@ export const Contact = () => {
   }
 
   return (
-    <section id="contact">
-      <h4>Contact</h4>
+    <section id="contact" style={{ paddingTop: "60px" }}>
+      <h4 style={{ textAlign: "center", marginBottom: "30px" }}>
+        Contact <PhoneIcon style={{ height: "20px" }} />
+      </h4>
       <div className="row">
-        <div className="col-lg-7">
-          <div style={{ width: "100%", height: "400px", position: "relative" }}>
+        <div className="col-lg-7 p-0">
+          <div
+            style={{
+              width: "100%",
+              height: "400px",
+              position: "relative",
+            }}
+          >
             <iframe
               width="100%"
               height="400px"
@@ -53,43 +64,40 @@ export const Contact = () => {
             />
             <div
               style={{
-                width: "100%",
-                height: "400px",
+                backgroundColor: "blue",
+                width: "70%",
+                maxWidth: "250px",
+                height: "100px",
+                top: "300px",
+                left: "15%",
                 position: "absolute",
-                top: "0",
-                left: "0",
-                zIndex: "9",
+                fontSize: "12px",
+                color: "gray",
+                backgroundColor: "white",
+                boxSizing: "border-box",
+                padding: "10px",
+                textAlign: "center",
+                boxShadow: "1px 1px 3px #e9e9e9",
               }}
             >
-              <p
-                style={{
-                  marginTop: "280px",
-                  marginLeft: "10%",
-                  width: "50%",
-                  maxWidth: "250px",
-                  fontSize: "12px",
-                  color: "gray",
-                  backgroundColor: "white",
-                  boxSizing: "border-box",
-                  padding: "10px",
-                  textAlign: "center",
-                  boxShadow: "1px 1px 3px #e9e9e9",
-                }}
-              >
-                3433 Rue Durocher <br />
-                Montreal, QC, H2X 2C8 <br />{" "}
-                <a href="">mobassera.zaman@mail.mcgill.ca</a>
-                <br /> +1 438 924 1770
-              </p>
+              3433 Rue Durocher <br />
+              Montreal, QC, H2X 2C8 <br />{" "}
+              <a href="" style={{ textDecoration: "none" }}>
+                mobassera.zaman@mail.mcgill.ca
+              </a>
+              <br /> +1 438 924 1770
             </div>
           </div>
         </div>
-        <div className="col-lg-5">
+        <div className="col-lg-5 p-0">
           <form
             netlify
             name="contact"
             onSubmit={handleSubmit}
-            style={{ boxSizing: "border-box", padding: "25px" }}
+            style={{
+              boxSizing: "border-box",
+              padding: "25px",
+            }}
           >
             <label
               htmlFor="name"

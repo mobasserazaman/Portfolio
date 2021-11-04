@@ -1,35 +1,41 @@
 import React from "react";
 import "./About.css";
+
 export const About = () => {
   return (
-    <section id="about">
-      {/* <div>
-        <img alt="hero" src="./coding.svg" />
-      </div> */}
+    <section id="about" style={{ paddingTop: "120px" }}>
       <div className="container-fluid">
         <div className="row">
-          <div className="d-flex justify-content-center col-lg-6">
+          <div className="col-lg-6 d-flex justify-content-center p-0">
             <div
               style={{
+                margin: "auto",
                 fontSize: "13px",
                 boxSizing: "border-box",
-                padding: "50px",
+                padding: "30px",
                 textAlign: "center",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              <p>
+                A versatile and ambitious graduate who is presently open to work
+                and looking for jobs in the Computer Software/Networking
+                industry.
+              </p>
+              <p>
+                Teamwork . Adaptability . Problem-solving . Leadership . Time
+                management
+              </p>
+              <p>
+                McGill University
+                <br />
+                Fall 2017 – Winter 2021
+                <br />
+                Bachelor of Science - Software Engineering
+              </p>
             </div>
           </div>
-          <div className="d-flex col-lg-6 justify-content-center m-auto">
+
+          <div className="d-flex col-lg-6 justify-content-center p-0">
             <div className="myimage">
               <img
                 alt="hero"

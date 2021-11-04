@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+// import "bootstrap/dist/css/bootstrap.css";
 
 // Note: Mixing jQuery with React is not recommended as they
 // both manipulate the DOM differently. While it may seem an easy
